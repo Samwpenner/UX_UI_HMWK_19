@@ -1,0 +1,220 @@
+body{
+    margin:0;
+    background-color: navy;
+}
+header{
+    background-color: navy;
+    height:200px;
+    display: flex;
+    align-content: center;
+}
+.logo{
+    display:flex;
+    align-items: center;
+    width:40%;
+}
+.logoImg{
+    width:100px;
+    height:100px;
+    padding:0px 0px 0px 100px;
+}
+.logoName {
+    font-family: azo-sans-uber, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 65px;
+    color:#EE7B30;
+    font-weight:bold;
+
+}
+.nav{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px;
+    width: 75%;
+}
+.navItem{
+    color:white;
+    padding:40px;
+    font-size: 25px;
+    font-family: source-code-pro,monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+.heroImg{
+    background-color: #EE7B30;
+    display: flex;
+    padding:15px 0px 120px 0px;
+    height: 600px;
+
+}
+.content{
+    width: 800px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.photo{
+    width: 600px;
+}
+footer{
+    background-color: navy;
+    color:white;
+    text-align: center;
+    height:150px;
+}
+ul{
+    padding:25px;
+}
+li{
+    padding:25px;
+    display:inline-block;
+    font-size: 25px;
+    font-family: source-code-pro,monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+h1{
+    font-family: azo-sans-uber, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color:#EE7B30;
+}
+h2{
+    font-family: azo-sans-uber, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 70px;
+    padding-top: 20px;
+    color:navy;
+}
+h3{
+    font-size: 20px;
+    font-family: source-code-pro,monospace;
+    font-weight: 500;
+    font-style: normal;
+    color:black;
+    text-align: center;
+}
+h4{
+    font-size: 30px;
+    font-family: source-code-pro,monospace;
+    font-weight: 500;
+    font-style: normal;
+    color:white;
+    text-align: center;
+}
+h5{
+    font-size: 20px;
+    font-family: source-code-pro,monospace;
+    font-weight: 500;
+    font-style: normal;
+    color:#EE7B30;
+    text-align: center;
+}
+.mySkills, .myWork{
+    padding:30px;
+    text-align: center;
+}
+.myWork{
+    color:navy;
+    display:flex;
+    flex-direction: column;
+}
+.flexContainer{
+    display:flex;
+    /* outline: 1px solid red; */
+}
+.userResearch, .userInterface, .webDev{
+    width:33%;
+    margin:20px;
+    padding:30px;
+    background-color: #EAEAEA;
+    flex-direction: column;
+    
+}
+.skillsImgs{
+    width:95%;
+}
+p{
+    font-size: 16px;
+    font-family: source-code-pro,monospace;
+    font-weight: 300;
+    font-style: normal;
+    color:black;
+    text-align: center;
+    padding: 10px 100px;
+}
+.projectdsc{
+    font-size: 16px;
+    font-family: source-code-pro,monospace;
+    font-weight: 300;
+    font-style: normal;
+    color:white;
+    text-align: center;
+    padding: 10px 100px;
+}
+button{
+    padding:10px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: source-code-pro,monospace;
+    font-weight: 300;
+    font-style: normal;
+    background-color: navy;
+    color:white;
+}
+.resume{
+    /* padding-bottom: 25px; */
+}
+.workGrid{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ; */
+    grid-template-areas: 'projectimg1 projectdescribe1' 'projectimg2 projectdescribe2' 'projectimg3 projectdescribe3';
+    background-color: #EE7B30;
+}
+.locavore{
+    /* grid-area: 1 / 2; */
+    grid-area: projectdescribe1;
+    padding-right:25vw;
+    padding-bottom: 50px;
+    padding-top:25px;
+}
+.locavoreimg{
+    /* grid-area: 1 / 1; */
+    grid-area:projectimg1;
+    padding-left:25vw;
+    padding-bottom: 50px;
+    padding-top:25px;
+}
+.goalfish{
+    grid-area: projectdescribe2;
+    padding-right:25vw;
+    padding-bottom: 50px;
+}
+.goalfishimg{
+    grid-area:projectimg2;
+    padding-left:25vw;
+    padding-bottom: 50px;
+}
+.pip{
+    grid-area: projectdescribe3;
+    padding-right:25vw;
+    padding-bottom: 75px;
+}
+.pipimg{
+    grid-area:projectimg3;
+    padding-left:25vw;
+    padding-bottom: 75px;
+}
+@media only screen and (max-width: 720px){
+    .workGrid{
+        grid-template-areas:'projectimg1' 'projectdescribe1' 'projectimg2' 'projectdescribe2' 'projectimg3' 'projectdescribe3';
+    }
+}
